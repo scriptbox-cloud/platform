@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+
+nav{
+    height: 60px;
+    width: 75%;
+    left: 50%;
+    /* right:0; */
+    transform: translate(-50%, -50%);
+    background-color: black;
+    position: fixed;
+    top: 6%;
+    /* border: 1px solid red;    */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    user-select: none;
+    z-index: 50;
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    /* backdrop-filter: blur(5px); */
+
+}
+
+nav img{
+    height: 50px;
+    width: 50px;
+}
+
+.ul{
+    height: 50px;
+    width: 500px;
+    color: white;
+    /* backdrop-filter: blur(5px); */
+    display:  flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background-color: rgba(17, 17, 17, 0.13); */
+    list-style-type: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+nav button{
+    height: 40px;
+    width: 90px;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    /* border: none; */
+    border: 1px solid rgb(56, 56, 56);
+}
+
+
+.scrolled{
+    border: 1px solid rgb(56, 56, 56);
+ 
+}
+
+.ham{
+    display: none;
+}
+
+nav h3{
+    display: none;
+}
+
+.db{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width:650px){
+    nav{
+        height: 45px;
+        width: 80%;
+        left: 50%;
+        /* right:0; */
+        transform: translate(-50%, -50%);
+        background-color: black;
+        position: fixed;
+        top: 5%;
+        /* border: 1px solid red;    */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 10px;
+        user-select: none;
+        z-index: 50;
+        font-family: "Noto Sans JP", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        /* backdrop-filter: blur(5px); */
+    
+    }
+    
+    nav img{
+        height: 38px;
+        width: 38px;
+    }
+    
+    .ul{
+        height: 50px;
+        width: 300px;
+        color: white;
+        /* backdrop-filter: blur(5px); */
+        display:  flex;
+        align-items: center;
+        justify-content: space-evenly;
+        /* background-color: rgba(17, 17, 17, 0.13); */
+        list-style-type: none;
+        border-radius: 30px;
+        cursor: pointer;
+        display: none;
+    }
+    
+    nav button{
+        height: 40px;
+        width: 90px;
+        background-color: black;
+        color: white;
+        border-radius: 8px;
+        /* border: none; */
+        border: 1px solid rgb(56, 56, 56);
+        display: none;
+    }
+
+    .ham{
+        display: block;
+        margin-right: 10px;
+    }
+
+    nav h3{
+        display: block;
+        color: white;
+        font-weight: 300;
+    }
+}
